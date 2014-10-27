@@ -8,7 +8,7 @@ $(document).ready(function() {
 	pageone.prototype.mainIntroduce = function() {
 		this.introTimer = 0;
 		this.introTimer2 = 0;
-		this.text = "Hello Dear Visitor, welcome to my personal website. My name is Danny ShanYu. I am a website designer and website engineer. To know more? please scroll down!";
+		this.text = "Hello Dear Visitor, welcome to my personal website. My name is Danny Shan. I am a website designer and website engineer. To know more? please scroll down!";
 		(function(e) {
 			e.introInterval = setInterval(function() {
 				if (e.introTimer < e.text.length)
@@ -697,9 +697,11 @@ $(document).ready(function() {
 	var pageOne = new pageone();
 	var pageTwo = new pagetwo();
 	var pageThree = new pagethree();
+	var imgArray = [];
 	for(var i = 0;i<pageThree.pics.length;i++){
 		var img = new Image(); 
 		img.src = "./img/"+pageThree.pics[i].pics;
+		imgArray.push(img);
 	}
 	var pageFour = new pagefour();
 	pageArray = [];
