@@ -170,14 +170,14 @@ $(document).ready(function() {
 		if (this.skillbar3) {
 			clearInterval(this.skillbar3.skillBarInterval);
 		}
-		for(var i = 0 ; i<4;i++){
-			if(i!=3){
-				$(".skill-point-each:eq("+i+")").animate({
+		for (var i = 0; i < 4; i++) {
+			if (i != 3) {
+				$(".skill-point-each:eq(" + i + ")").animate({
 					"marginTop": "-20px",
 					"opacity": 0
 				}, 300);
-			}else{
-				$(".skill-point-each:eq("+i+")").animate({
+			} else {
+				$(".skill-point-each:eq(" + i + ")").animate({
 					"marginTop": "-20px",
 					"opacity": 0
 				}, 300, function() {
@@ -203,117 +203,93 @@ $(document).ready(function() {
 		}
 	}
 	var pagethree = function() {
-		this.pics = [
-			{
-				"pics":"1.png",
-				"intros":"I follow the tutorial on tutsplus.com and finish my first website",
-				"link":"http://dannyshan.me/practice1"
+		this.pics = [{
+				"pics": "1.png",
+				"intros": "I follow the tutorial on tutsplus.com and finish my first website",
+				"link": "http://dannyshan.me/practice1"
+			}, {
+				"pics": "2-2.png",
+				"intros": "This is my second practice website. <br/>" + "I used 960 grid and practice the usage of form element while building this website.",
+				"link": "http://dannyshan.me/practice2/home.html"
+			}, {
+				"pics": "5-2.png",
+				"intros": "This is a practice website for using jquery animate.",
+				"link": "http://dannyshan.me/photoslider"
+			}, {
+				"pics": "8-2.png",
+				"intros": "The project for the Database Lesson, <br/>using ajax and a theme similar to Microsoft outlook website",
+				"link": "http://dannyshan.me/database"
+			}, {
+				"pics": "8-1.png",
+				"intros": "The project for the Database Lesson, <br/>using ajax and a theme similar to Microsoft outlook website",
+				"link": "http://dannyshan.me/database/login.html"
 			},
+
 			{
-				"pics":"2-2.png",
-				"intros":"This is my second practice website. <br/>"+
-				"I used 960 grid and practice the usage of form element while building this website.",
-				"link":"http://dannyshan.me/practice2/home.html"
-			},
-			{
-				"pics":"5-2.png",
-				"intros":"This is a practice website for using jquery animate.",
-				"link":"http://dannyshan.me/photoslider"
-			},
-			{
-				"pics":"8-2.png",
-				"intros":"The project for the Database Lesson, <br/>using ajax and a theme similar to Microsoft outlook website",
-				"link":"http://dannyshan.me/database"
-			},
-			{
-				"pics":"8-1.png",
-				"intros":"The project for the Database Lesson, <br/>using ajax and a theme similar to Microsoft outlook website",
-				"link":"http://dannyshan.me/database/login.html"
-			},
-			
-			{
-				"pics":"9-2.png",
-				"intros":"The project for the Multimedia Lesson, <br/>using html5 video element and mysql database<br/>"
-				+"I also use the first version of my html video barrage class in this project",
-				"link":""
-			},
-			{
-				"pics":"9-1.png",
-				"intros":"The project for the Multimedia Lesson, <br/>using html5 video element and mysql database<br/>"
-				+"I also use the first version of my html video barrage class in this project",
-				"link":""
-			},
-			{
-				"pics":"20-2.png",
-				"intros":"These are small websites I made for my girl friend and I hope she likes them",
-				"link":""
-			},
-			{
-				"pics":"20-1.png",
-				"intros":"These are small websites I made for my girl friend and I hope she likes them",
-				"link":""
-			},
-			{
-				"pics":"10.png",
-				"intros":"A commercial website made for Shanghai Youth League Committee",
-				"link":"http://dannyshan.me/tuanwei"
-			},
-			{
-				"pics":"14-1.png",
-				"intros":"The online testing website used for a talent competition. <br/>Using php and mysql for backend. <br/>"+
-				"Above 400 students participate and the website worked well",
-				"link":"http://stu.fudan.edu.cn/ztalents"
-			},
-			{
-				"pics":"13-1.png",
-				"intros":"Build the html5 video barrage system.<br/>"+
-				"It's adaptive to both a live broadcast and a recorded video <br/>"+
-				"it's also adaptive to full-screen play.(picture's from Internet)",
-				"link":""
-			},
-			{
-				"pics":"7-2.png",
-				"intros":"The stu event platform. I am the PM and the frontend programmer of this website.<br/>"+
-				"It includes a main page, detail page, personal-publising page, <br/>organization-publishing page, and organization-modify page",
-				"link":"http://stu.fudan.edu.cn/event/addevent.html"
-			},
-			{
-				"pics":"7-1.png",
-				"intros":"The stu event platform. I am the PM and the frontend programmer of this website.<br/>"+
-				"It includes a main page, detail page, personal-publising page, <br/>organization-publishing page, and organization-modify page",
-				"link":"http://stu.fudan.edu.cn/event"
-			},
-			{
-				"pics":"16-1.png",
-				"intros":"The showing page for STU 13th anniversary, <br/>"+
-				"using Parallax scrolling and html5 canvas animation <br/>"+
-				"the trajectory of the paper plane is calculated based on the Bias curve",
-				"link":"http://stu.fudan.edu.cn/timeline2014"
+				"pics": "9-2.png",
+				"intros": "The project for the Multimedia Lesson, <br/>using html5 video element and mysql database<br/>" + "I also use the first version of my html video barrage class in this project",
+				"link": ""
+			}, {
+				"pics": "9-1.png",
+				"intros": "The project for the Multimedia Lesson, <br/>using html5 video element and mysql database<br/>" + "I also use the first version of my html video barrage class in this project",
+				"link": ""
+			}, {
+				"pics": "20-2.png",
+				"intros": "These are small websites I made for my girl friend and I hope she likes them",
+				"link": ""
+			}, {
+				"pics": "20-1.png",
+				"intros": "These are small websites I made for my girl friend and I hope she likes them",
+				"link": ""
+			}, {
+				"pics": "10.png",
+				"intros": "A commercial website made for Shanghai Youth League Committee",
+				"link": "http://dannyshan.me/tuanwei"
+			}, {
+				"pics": "14-1.png",
+				"intros": "The online testing website used for a talent competition. <br/>Using php and mysql for backend. <br/>" + "Above 400 students participate and the website worked well",
+				"link": "http://stu.fudan.edu.cn/ztalents"
+			}, {
+				"pics": "13-1.png",
+				"intros": "Build the html5 video barrage system.<br/>" + "It's adaptive to both a live broadcast and a recorded video <br/>" + "it's also adaptive to full-screen play.(picture's from Internet)",
+				"link": ""
+			}, {
+				"pics": "7-2.png",
+				"intros": "The stu event platform. I am the PM and the frontend programmer of this website.<br/>" + "It includes a main page, detail page, personal-publising page, <br/>organization-publishing page, and organization-modify page",
+				"link": "http://stu.fudan.edu.cn/event/addevent.html"
+			}, {
+				"pics": "7-1.png",
+				"intros": "The stu event platform. I am the PM and the frontend programmer of this website.<br/>" + "It includes a main page, detail page, personal-publising page, <br/>organization-publishing page, and organization-modify page",
+				"link": "http://stu.fudan.edu.cn/event"
+			}, {
+				"pics": "16-1.png",
+				"intros": "The showing page for STU 13th anniversary, <br/>" + "using Parallax scrolling and html5 canvas animation <br/>" + "the trajectory of the paper plane is calculated based on the Bias curve",
+				"link": "http://stu.fudan.edu.cn/timeline2014"
 			}
 		],
 		this.picnum;
 		this.arrowAllow = true;
 	};
 
-	pagethree.prototype.fadeIn = pagethree.prototype.reshow  = function(callback){
+	pagethree.prototype.fadeIn = pagethree.prototype.reshow = function(callback) {
 		$(".page").hide();
 		$("#page2").show();
-		if(this.picnum==null){
-			this.picnum = this.pics.length-1;
+		if (this.picnum == null) {
+			this.picnum = this.pics.length - 1;
 		}
-		if(this.pics[this.picnum].link!=""){
+		if (this.pics[this.picnum].link != "") {
 			$("#work-wrap #work-img").addClass("link");
-			$("#work-wrap #work-img").attr("link",this.pics[this.picnum].link);
+			$("#work-wrap #work-img").attr("link", this.pics[this.picnum].link);
 		}
-		$("#work-wrap #work-img").css("background-image","url('./img/"+this.pics[this.picnum].pics+"')");
+		$("#work-wrap #work-img").css("background-image", "url('./img/" + this.pics[this.picnum].pics + "')");
 		$("#work-wrap #img-intro p").html(this.pics[this.picnum].intros);
-		
+
 		$("#page2 .main-title").css({
 			"marginTop": "60px",
 			"opacity": 0
 		});
 		$("#work-wrap").css({
-			"paddingTop":"10px",
+			"paddingTop": "10px",
 			"opacity": 0
 		});
 		$("#page2 .main-title").animate({
@@ -321,130 +297,115 @@ $(document).ready(function() {
 			"opacity": 1
 		}, 300, function() {
 			$("#work-wrap").animate({
-				"paddingTop":"0px",
+				"paddingTop": "0px",
 				"opacity": 1
-			},300,function(){
+			}, 300, function() {
 				if (callback) {
 					callback();
 				}
 			});
 		});
-		var time = 800;
-		(function(e){
-			$("#right-arrow").on("click",function(){
-				if(e.arrowAllow == true){
+		var time = 500;
+		(function(e) {
+			$("#right-arrow").on("click", function() {
+				if (e.arrowAllow == true) {
 					e.arrowAllow = false;
 					e.picnum--;
-					if(e.picnum<0){
-						e.picnum = e.pics.length-1;
+					if (e.picnum < 0) {
+						e.picnum = e.pics.length - 1;
 					}
-					if(e.pics[e.picnum].link!=""){
-						$("#work-wrap #work-img").after("<div id='work-img-next' class='img-class link' link='"+e.pics[e.picnum].link+"'></div>");
-					}
-					else{
+					if (e.pics[e.picnum].link != "") {
+						$("#work-wrap #work-img").after("<div id='work-img-next' class='img-class link' link='" + e.pics[e.picnum].link + "'></div>");
+					} else {
 						$("#work-wrap #work-img").after("<div id='work-img-next' class='img-class'></div>");
 					}
-					$("#work-wrap #img-intro p").html(e.pics[e.picnum].intros);
-					$("#work-wrap #work-img-next").css("marginLeft","40px");
-					$("#work-wrap #work-img-next").css("background-image","url('./img/"+e.pics[e.picnum].pics+"')");
-					$("#work-wrap #work-img-next").css("background-position","left center");
-					$("#work-wrap #work-img-next").css("width","0px");
-					$("#work-wrap #work-img").css({
-						"background-position":"right center",
+					$("#work-img-next").hide();
+					$("#img-cover").fadeOut();
+					$("#img-intro").fadeOut(function(){
+						$("#img-intro p").html(e.pics[e.picnum].intros);
 					});
-					$("#work-wrap #work-img").animate({
-						"width":"0px"
-					},time,"linear",function(){
-						$("#work-wrap #work-img-next").animate({
-							"width":"634px"
-						},200)
-						$("#work-wrap #work-img").animate({
-							"marginLeft":"40px"
-						},200,"linear",function(){
-							$("#work-wrap #work-img").remove();
-							$("#work-wrap #work-img-next").css("marginLeft","80px");
-							$("#work-wrap #work-img-next").attr("id","work-img");
-							e.arrowAllow = true;
-						});
-					});
+					$("#work-img-next").css("background-image", "url('./img/" + e.pics[e.picnum].pics + "')");
+					$("#work-img-next").css("background-position", "left center");
+					$("#work-img").css("background-position", "right center");
+					$("#work-img").addClass("slide-left");
 					setTimeout(function(){
-						$("#work-wrap #work-img-next").animate({
-							"width":"594px"
-						},time*(1-40/634),"linear");
-					},time*40/634);
-				}
+						$("#work-img-next").show();
+						$("#work-img-next").addClass("slide-left");
+					},300);
+					setTimeout(function(){
+						$("#work-img").remove();
+					},1000);
+					setTimeout(function(){
+						$("#work-wrap #work-img-next").attr("id", "work-img");
+						$("#work-wrap #work-img").removeClass("slide-left");
+						e.arrowAllow = true;
+						$("#img-intro").fadeIn();
+						$("#img-cover").fadeIn();
+					},1300);
 				
+				}
+
 			})
 		})(this);
-		(function(e){
-			$("#left-arrow").on("click",function(){
-				if(e.arrowAllow == true){
-					e.arrowAllow  = false;
+		(function(e) {
+			$("#left-arrow").on("click", function() {
+				if (e.arrowAllow == true) {
+					e.arrowAllow = false;
 					e.picnum++;
-					if(e.picnum>=e.pics.length){
+					if (e.picnum >= e.pics.length) {
 						e.picnum = 0;
 					}
-					if(e.pics[e.picnum].link!=""){
-						$("#work-wrap #work-img").before("<div id='work-img-next' class='img-class link' link='"+e.pics[e.picnum].link+"'></div>");
+					if (e.pics[e.picnum].link != "") {
+						$("#work-img").before("<div id='work-img-next' class='img-class link' link='" + e.pics[e.picnum].link + "'></div>");
+					} else {
+						$("#work-img").before("<div id='work-img-next' class='img-class'></div>");
 					}
-					else{
-						$("#work-wrap #work-img").before("<div id='work-img-next' class='img-class'></div>");
-					}
-					$("#work-wrap #img-intro p").html(e.pics[e.picnum].intros);
-					$("#work-wrap #work-img-next").css("marginRight","40px");
-					$("#work-wrap #work-img-next").css("marginLeft","40px");
-					$("#work-wrap #work-img-next").css("background-image","url('./img/"+e.pics[e.picnum].pics+"')");
-					$("#work-wrap #work-img-next").css("background-position","right center");
-					$("#work-wrap #work-img-next").css("width","0px");
-					$("#work-wrap #work-img").css({
-						"background-position":"left center",
-						"marginLeft":"0px"
+					$("#work-img-next").hide();
+					$("#img-cover").fadeOut();
+					$("#img-intro").fadeOut(function(){
+						$("#img-intro p").html(e.pics[e.picnum].intros);
 					});
-					$("#work-wrap #work-img").animate({
-						"width":"0px"
-					},time,"linear",function(){
-						$("#work-wrap #work-img-next").animate({
-							"width":"634px"
-						},200)
-						$("#work-wrap #work-img").remove();
-						$("#work-wrap #work-img-next").animate({
-							"marginLeft":"80px"
-						},200,"linear",function(){
-							$("#work-wrap #work-img-next").attr("id","work-img");
-							$("#work-img").css({"marginRight":"0px"});
-							e.arrowAllow = true;
-						});
-					});
-					$("#work-img-next").animate({
-						"marginLeft":"80px"
-					},time*40/634,"linear",function(){
-						$("#work-wrap #work-img-next").animate({
-							"width":"598px"
-						},time*(1-40/634),"linear");
-					})
+					$("#work-img-next").css("background-image", "url('./img/" + e.pics[e.picnum].pics + "')");
+					$("#work-img-next").css("background-position", "right center");
+					$("#work-img").css("background-position", "left center");
+					$("#work-img").addClass("slide-right");
+					setTimeout(function(){
+						$("#work-img-next").show();
+						$("#work-img-next").addClass("slide-right");
+					},300);
+					setTimeout(function(){
+						$("#work-img").remove();
+					},1000);
+					setTimeout(function(){
+						$("#work-wrap #work-img-next").attr("id", "work-img");
+						$("#work-wrap #work-img").removeClass("slide-right");
+						e.arrowAllow = true;
+						$("#img-intro").fadeIn();
+						$("#img-cover").fadeIn();
+					},1300);
 				}
-				
+
 			})
 		})(this);
-		
+
 	}
 	pagethree.prototype.fadeOut = function(callback) {
 		$("#work-wrap").animate({
 			"marginTop": "-20px",
-			"opacity":0
-		},300,function(){
+			"opacity": 0
+		}, 300, function() {
 			$("#page2 .main-title").animate({
 				"marginTop": "40px",
 				"opacity": 0
-			},300,function(){
-				$("#work-wrap").css("marginTop","0px");
+			}, 300, function() {
+				$("#work-wrap").css("marginTop", "0px");
 				$("#page2").hide();
 				if (callback) {
 					callback();
 				}
 			})
 		});
-		
+
 	}
 	var pagefour = function() {
 
@@ -559,13 +520,12 @@ $(document).ready(function() {
 			var nextpage = pagenow + 1;
 			pageArray[prevpage].fadeOut(function() {
 				pageArray[nextpage].fadeIn(function() {
-					
+
 					navEnable = true;
 				})
 			})
 			pagenow++;
-		}
-		else{
+		} else {
 			navEnable = true;
 		}
 	}
@@ -579,8 +539,7 @@ $(document).ready(function() {
 				});
 			})
 			pagenow--;
-		}
-		else{
+		} else {
 			navEnable = true;
 		}
 	}
@@ -626,16 +585,16 @@ $(document).ready(function() {
 			if (navEnable == true) {
 
 				navEnable = false;
-				if(e.keyCode==40){
+				if (e.keyCode == 40) {
 					rollDown();
 				}
-				if(e.keyCode==38){
+				if (e.keyCode == 38) {
 					rollUp();
 				}
 				navTo(pagenow, true);
 			}
 		})
-		$(document).on("click",".link",function(){
+		$(document).on("click", ".link", function() {
 			window.open($(this).attr("link"));
 		})
 		$(".skill-detail-icon").on("click", function() {
@@ -694,16 +653,29 @@ $(document).ready(function() {
 		}
 		return pos;
 	}
+
+	function preloadImg(pageThree) {
+		var imgArray = [];
+		for (var i = 0; i < pageThree.pics.length; i++) {
+			var img = new Image();
+			img.src = "./img/" + pageThree.pics[i].pics;
+			imgArray.push(img);
+		}
+		var preloadImg = ["./img/right-arrow-hover.png"];
+		for (var i = 0; i < preloadImg.length; i++) {
+			var img = new Image();
+			img.src = preloadImg[i];
+			imgArray.push(img);
+		}
+	}
+
+
+	
 	var pageOne = new pageone();
 	var pageTwo = new pagetwo();
 	var pageThree = new pagethree();
-	var imgArray = [];
-	for(var i = 0;i<pageThree.pics.length;i++){
-		var img = new Image(); 
-		img.src = "./img/"+pageThree.pics[i].pics;
-		imgArray.push(img);
-	}
 	var pageFour = new pagefour();
+	preloadImg(pageThree);
 	pageArray = [];
 	pageArray.push(pageOne, pageTwo, pageThree, pageFour);
 	pageOne.fadeIn();
